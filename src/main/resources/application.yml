@@ -34,6 +34,6 @@ spring:
         - id: second-service
           predicates:
             - Path=/second/**
-          uri: lb://release
+          uri: lb://second
           filters:
             - RewritePath=/second/(?<segment>.*), /$\{segment}
